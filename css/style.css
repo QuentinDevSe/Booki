@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -13,9 +16,45 @@
     color: var(--main-color);
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+    height: 8vh;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 20px;
+    width: auto;
+}
+
+.menu_nav {
+    padding-top: 6px;
+}
+
+.nav a {
+    margin: 2px 35px;
+    position: relative;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    padding-top: 10px;
+}
+
+.nav a:hover {
+    border-top: 2.5px solid #0065FC;
+    padding-top: 5px;
+}
+
 body {
     display: flex;
     justify-content: center;
+    font-size: small;
 }
 
 .main-container {
@@ -23,6 +62,51 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.infogroup {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.title_infogroup,
+.search-form,
+.filters_infogroup,
+.bottom-infogroup {
+    margin: 30px;
+}
+
+.filters_infogroup {
+    display: flex;
+    align-items: center;
+}
+
+.filter-buttons {
+    margin-left: 10px;
+}
+
+.filter-btn {
+    margin-right: 10px; 
+}
+
+.input-with-image {
+    border: 2px solid #D9D9D9;
+    border-radius: 5%;
+    
+}
+
+.input-with-image i {
+    background-color: #D9D9D9;
+}
+
+.bottom-infogroup {
+    display: flex; 
+    align-items: center; 
+}
+
+.bottom-infogroup i {
+    margin-right: 10px;
 }
 
 a {
