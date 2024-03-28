@@ -16,6 +16,11 @@
     color: var(--main-color);
 }
 
+header { 
+    height: auto;
+    margin-bottom: 4vh;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -65,48 +70,132 @@ body {
 }
 
 .infogroup {
-    height: 20vh;
+    height: 35vh;
+    width: 60vw;
     display: flex;
     align-items: center;
 }
 
+.search {
+    width: 100%;
+}
+
 .title_infogroup,
 .search-form,
-.filters_infogroup,
+.filters_infogroup {
+    margin: 12px 0px;
+    padding: 8px 0px;
+    flex-grow: 1;
+    flex-basis: 25%; 
+}
+
 .bottom-infogroup {
-    margin: 30px;
+    margin: 10px 0px;
+    padding: 0px;
+    flex-grow: 1;
+    flex-basis: 40%; 
+}
+
+.input-with-image {
+    border-radius: 10px;
+    height: 40px;
+    width: 23vw;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex: 1;
+}
+
+
+.input-with-image i {
+    margin: 0;
+    padding-right: 2px;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.input-with-image input {
+    margin-right: 2px;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    height: 100%;
+
+}
+
+.input-with-image input::placeholder {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.input-with-image button {
+    border: none;
+    background-color: #0065FC;
+    color: #DEEBFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .filters_infogroup {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
     margin-left: 10px;
 }
 
 .filter-btn {
-    margin-right: 10px; 
+    border-radius: 20px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    box-shadow: none;
+    height: 40px;
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 0;
+    flex: 1;
 }
 
-.input-with-image {
-    border: 2px solid #D9D9D9;
-    border-radius: 5%;
-    
-}
-
-.input-with-image i {
-    background-color: #D9D9D9;
+.filter-btn i {
+    margin-right: 8px;
 }
 
 .bottom-infogroup {
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .bottom-infogroup i {
     margin-right: 10px;
+    height: 100%;
 }
 
 a {
