@@ -288,6 +288,7 @@ a {
     height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 /****** Populaires ***********/
@@ -311,6 +312,7 @@ a {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
@@ -335,7 +337,51 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activities ***********/
 
+.Activities {
+    width: 100%;
+    height: 550px;
+    margin-top: 40px;
+}
+
+.Activities-title {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.Activities-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px;
+    height: 80%;
+}
+
+.Activities-cards a {
+    width: 25%;
+    height: 100%;
+    
+}
+.Activities-cards .card {
+    width: 90%;
+    height: 100%; 
+    margin: 10px;
+    padding: 0;
+    
+}
+
+.Activities-cards .card img {
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.Activities-cards .card-content {
+    padding: 15px 12px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
