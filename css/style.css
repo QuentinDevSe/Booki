@@ -17,12 +17,14 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
     height: 100%;
 }
 
 header { 
-    height: 7%;
-    margin-bottom: 1vh;
+    height: 100px;
+    margin-bottom: 0;
 }
 
 .nav {
@@ -48,7 +50,7 @@ header {
 }
 
 .nav a {
-    margin: 2px 35px;
+    margin: 2px 30px;
     position: relative;
     text-decoration: none;
     border-top: 2px solid transparent;
@@ -60,23 +62,18 @@ header {
     padding-top: 5px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    font-size: small;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
-    max-height: 709px;
+    min-width: 320px;
     padding: 0 50px;
-    margin: 0 auto;
+    margin: 0 0;
     box-sizing: border-box;
 }
 
+/****** Section avec fonction de recherche et filtres ***********/
 .infogroup {
-    height: 27vh;
+    height: 325px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -91,8 +88,7 @@ body {
 .filters_infogroup {
     margin: 12px 0px;
     padding: 8px 0px;
-    flex-grow: 1;
-    flex-basis: 25%; 
+    flex: 1;
 }
 
 .bottom-infogroup {
@@ -105,7 +101,7 @@ body {
 .input-with-image {
     border-radius: 10px;
     height: 40px;
-    width: 23vw;
+    width: 280px;
     display: flex;
     align-items: center;
     padding: 0;
@@ -159,13 +155,13 @@ body {
 .filters_infogroup {
     display: flex;
     align-items: center;
-    width: 70%;
+    width: 900px;
 }
 
 .filter-buttons {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 720px;
     margin-left: 10px;
 }
 
@@ -220,6 +216,7 @@ a {
     font-size: 22px;
 }
 
+/****** Création des cards ***********/
 .card {
     background-color: white;
     border-radius: 20px;
@@ -278,7 +275,6 @@ a {
     
 }
 .hebergements-cards .card {
-    width: 90%;
     margin: 10px;
     height: 200px; 
 }
@@ -338,7 +334,6 @@ a {
 }
 
 /****** Activities ***********/
-
 .Activities {
     width: 100%;
     height: 550px;
@@ -389,6 +384,16 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .search-form {
+        padding: 0;
+    }
+
+    .title_infogroup {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -424,4 +429,93 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .title_infogroup {
+        font-size: 14px;
+    }
+    .menu_nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav a {
+        margin: 3px 15px;
+        position: relative;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 10px;
+    }
+    
+    .nav a:hover {
+        border-top: none;
+        border-bottom: 2.5px solid #0065FC;
+        padding-bottom: 5px;
+    }
+
+    .search-form {
+        padding: 0;
+    }
+
+    .title_infogroup {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .filters_infogroup {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-buttons {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .filter-btn {
+        margin: 4px 8px;
+    }
+
+    .hebergements-cards {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .Activities-cards {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Activities-cards a {
+        width: 100%;
+        height: 60%;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+
 }
