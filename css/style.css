@@ -417,7 +417,7 @@ a {
     
 }
 .Activities-cards .card {
-    height: 450px;
+    height: 400px;
     width: 85%;
     padding-left: 0;
     padding-right: 0;
@@ -434,7 +434,10 @@ a {
 }
 
 .Activities-cards .card-content {
-    padding: 15px 12px;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
 }
 
 /****** Footer ***********/
@@ -470,6 +473,7 @@ a {
     .search-button i {
         display: none; 
     }
+
 }
 
 @media (max-width: 1024px) {
@@ -549,18 +553,16 @@ a {
     }
 
     .Activities-cards .card img {
-        height: 80%;
+        height: 85%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         object-fit: cover;
     }
 
     .Activities-cards .card-content {
+        height: 15%;
         display: flex;
         align-items: center;
-        padding: 5px;
-        
-
     }
 
 }
@@ -706,7 +708,9 @@ a {
     }
 
     .Activities-cards .card-content {
-        padding: 10px;
+        height: 22%;
+        display: flex;
+        align-items: center;
         white-space: nowrap;
 
     }
