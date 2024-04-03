@@ -219,9 +219,20 @@ body {
     padding: 0;
 }
 
-.bottom-infogroup i {
+.icon-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    border: 2px solid #F2F2F2; 
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
-    height: 100%;
+}
+
+.bottom-infogroup i {
+    font-size: 12px;
 }
 
 a {
