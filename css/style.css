@@ -42,7 +42,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2px;
-    height: 10vh;
+    height: 80px;
 }
 
 .menu_nav {
@@ -90,6 +90,10 @@ body {
     margin: 12px 0px;
     padding: 8px 0px;
     flex: 1;
+}
+
+.title_infogroup h1 {
+    margin-bottom: 10px;
 }
 
 .search-container {
