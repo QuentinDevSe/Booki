@@ -161,7 +161,7 @@ body {
 
 .search-button i {
     font-size: 16px;
-    color: var(--main-bg-color);
+    color: white;
     background-color: var(--main-color);
     
 }
@@ -309,6 +309,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 30px 0px;
+    padding: 10px;
 }
 
 .hebergements-cards a {
@@ -352,7 +353,7 @@ a {
 }
 
 .populaires-cards {
-    padding: 10px;
+    padding: 20px;
 }
 
 .populaires-cards .card {
