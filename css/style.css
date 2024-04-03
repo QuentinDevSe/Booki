@@ -42,6 +42,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 2px;
+    height: 10vh;
 }
 
 .menu_nav {
